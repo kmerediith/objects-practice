@@ -6,4 +6,13 @@ const dinner = {
     soupsalad: 16,  
 }
 
-console.table(dinner);
+
+function totalCost(meal){
+total = 0; 
+for(const food in meal){
+    total += meal[food];
+}
+return total;
+}
+
+ console.log(totalCost);
